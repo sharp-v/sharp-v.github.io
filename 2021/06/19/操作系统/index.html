@@ -28,7 +28,7 @@
 <meta property="og:description" content="操作系统知识点总结操作系统基本概念OS: operating system 操作系统发展历史 人工操作阶段 真空管、插线板 批处理阶段  晶体管、批处理系统、穿孔卡片 形成阶段  集成电路、多道程序设计 成熟发展阶段   操作系统的分类 按处理器分类 a. 分时OS： 采用分配时间片的方法，一个CPU可以为多个用户服务   ①所谓分时是指两个以上的事件按时间划分轮流使用某一个资源   ②时间片是指">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-06-19T04:19:10.005Z">
-<meta property="article:modified_time" content="2021-06-20T13:09:43.696Z">
+<meta property="article:modified_time" content="2021-06-20T14:54:36.309Z">
 <meta property="article:author" content="sharp-v">
 <meta name="twitter:card" content="summary">
 
@@ -180,7 +180,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-06-20 21:09:43" itemprop="dateModified" datetime="2021-06-20T21:09:43+08:00">2021-06-20</time>
+                <time title="Modified: 2021-06-20 22:54:36" itemprop="dateModified" datetime="2021-06-20T22:54:36+08:00">2021-06-20</time>
               </span>
 
           
@@ -234,9 +234,27 @@
 </li>
 </ol>
 <h4 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h4><p>方便用户使用<br>提供系统资源利用率<br>提高系统效率<br>扩大机器功能<br>构筑开放环境</p>
-<h3 id="一些基本概率"><a href="#一些基本概率" class="headerlink" title="一些基本概率"></a>一些基本概率</h3><p>内核：宏内核、微内核<br>内核模式 特权指令+非特权指令<br>用户模式 非特权指令<br>访管指令：从用户模式切换到内核模式，内核模式完成后，从内核模式切换的到用户模式</p>
+<h3 id="一些基本概率"><a href="#一些基本概率" class="headerlink" title="一些基本概率"></a>一些基本概率</h3><p>操作系统内核<br>内核是操作系统最基本的部分。它是为众多应用程序提供对计算机硬件的安全访问的一部分软件，这种访问是有限的，并且内核决定一个程序在什么时候对某部分硬件操作多长时间。内核的分类可分为单内核和双内核以及微内核。严格地说，内核并不是计算机系统中必要的组成部分。</p>
+<p>为什么说内核不是计算机系统中必要的组成部分？</p>
+<p>操作系统（operating system，简称OS）是管理计算机硬件与软件资源的计算机程序。操作系统需要处理如管理与配置内存、决定系统资源供需的优先次序、控制输入设备与输出设备、操作网络与管理文件系统等基本事务。操作系统也提供一个让用户与系统交互的操作界面。</p>
+<p>计算机系统指用于数据库管理的计算机硬软件及网络系统。数据库系统需要大容量的主存以存放和运行操作系统、数据库管理系统程序、应用程序以及数据库、目录、系统缓冲区等，而辅存则需要大容量的直接存取设备。此外，系统应具有较强的网络功能。</p>
+<p>内核是操作系统的内核。。。操作系统只是计算机系统(硬件)上的一个重要的软件，这个软件不一定要用于管理计算机硬件(内存管理、进程管理、文件管理等等都可以没有)，这个软件只要完成计算机系统的任务就行了，在或者这么说这个计算机系统上完全没有操作系统都是可以的，只要你会用。</p>
+<p>那这里不如改成: 严格地说，操作系统内核不是计算机系统中的必要组成部分。<br>在“内核”前面加上“操作系统”，以表示强调，不然感觉原句略微装逼。</p>
+<h4 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h4><p>BIOS -&gt; UEFI<br>MBR GPT<br>HDD SSD</p>
+<p>CPU<br>内核模式 特权指令+非特权指令<br>用户模式 非特权指令<br>访管指令：从用户模式切换到内核模式，内核模式完成后，从内核模式切换的到用户模式<br>中断、保护现场  中断优先级<br>通道、DMA   通道处理器即PCH(南桥)，北桥在CPU内部</p>
+<h4 id="用户接口"><a href="#用户接口" class="headerlink" title="用户接口"></a>用户接口</h4><h5 id="程序员接口"><a href="#程序员接口" class="headerlink" title="程序员接口"></a>程序员接口</h5><p>操作系统为用户提供的各种操作命令，用户可利用这些操作命令来组织作业的工作流程和控制作业的执行。操作员接口包括脱机用户接口和联机用户接口两大类。</p>
 <p>作业:<br>把用户要求计算机完成的一个计算过程或者一次事务的处理过程称为一个作业。<br>作业是用户向计算机系统提交工作的基本单位。<br>作业的几个步骤：<br>编辑、编译、链接、运行</p>
 <p>按作业的处理方式的不同分：<br>脱机工作：指用户不能直接与计算机系统交互，中间通过操作员干预的作业。<br>联机工作：指用户和计算机系统直接交互，用户通过终端或者控制台命令或者菜单图标等方式控制作业的运行。</p>
+<h5 id="操作员接口"><a href="#操作员接口" class="headerlink" title="操作员接口"></a>操作员接口</h5><p>程序员接口由一组系统调用（System Call）组成。程序员接口是操作系统专门为用户程序设置的，允许用户程序调用操作系统的服务和功能，也是用户程序获得操作系统服务的唯一途径。</p>
+<p>系统调用（系统功能调用）<br>用户在程序中能用访管指令区调用的由操作系统提供的子程序，其中每个子程序完成了一个特定的功能。</p>
+<p>系统调用和标准库函数的区别：<br>标准库函数更用户自己编写的函数时一个层次上的东西<br>都是建立在API函数的基础之上<br>API函数中含有访管指令，会跳到内核中对应的内核函数入口去执行<br>windows、linux系统的API是C语言形式的，dos系统的API是汇编形式的，所以省去了API函数这一层，而是在用程序中直接调用访管指令INT</p>
+<p>系统调用传递参数的方法<br>(1)由访管指令或陷入指令自带参数。有直接参数和间接参数两种。例如UNIX系统。(参数还是在内存中的)<br>(2)通过CPU的通用寄存器传递参数，或在内存的一个块或表中存放参数，其首地址送入寄存器，实现参数传递。例如DOS系统。<br>(3）在内存中开辟专用堆栈区域传递参数。</p>
+<p>系统调用与一般过程调用的区别</p>
+<ol>
+<li>运行的系统状态不同<br>一般过程都是全是用户态或者全是内核态<br>系统调用式通过访管指令或者终端从用户态进入内核态，完成调用后，回到用户态</li>
+<li>进入的方式不同</li>
+<li>调用的方式不同</li>
+</ol>
 <h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><h2 id="线程管理"><a href="#线程管理" class="headerlink" title="线程管理"></a>线程管理</h2><h2 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h2>
     </div>
 
@@ -317,7 +335,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93"><span class="nav-number">1.</span> <span class="nav-text">操作系统知识点总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">操作系统基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2"><span class="nav-number">1.1.1.</span> <span class="nav-text">操作系统发展历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-number">1.1.2.</span> <span class="nav-text">操作系统的分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%89%B9%E5%BE%81"><span class="nav-number">1.1.3.</span> <span class="nav-text">现代操作系统的基本特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD%E6%80%A7%E8%83%BD%E8%AF%84%E4%BB%B7%E5%92%8C%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.4.</span> <span class="nav-text">操作系统的基本功能性能评价和设计目标</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">基本功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%A7%E8%83%BD%E8%AF%84%E4%BB%B7"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">性能评价</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.4.3.</span> <span class="nav-text">设计目标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E6%A6%82%E7%8E%87"><span class="nav-number">1.1.5.</span> <span class="nav-text">一些基本概率</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="nav-number">1.2.</span> <span class="nav-text">进程管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="nav-number">1.3.</span> <span class="nav-text">线程管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="nav-number">1.4.</span> <span class="nav-text">内存管理</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93"><span class="nav-number">1.</span> <span class="nav-text">操作系统知识点总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">操作系统基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2"><span class="nav-number">1.1.1.</span> <span class="nav-text">操作系统发展历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-number">1.1.2.</span> <span class="nav-text">操作系统的分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%89%B9%E5%BE%81"><span class="nav-number">1.1.3.</span> <span class="nav-text">现代操作系统的基本特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD%E6%80%A7%E8%83%BD%E8%AF%84%E4%BB%B7%E5%92%8C%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.4.</span> <span class="nav-text">操作系统的基本功能性能评价和设计目标</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">基本功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%A7%E8%83%BD%E8%AF%84%E4%BB%B7"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">性能评价</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.4.3.</span> <span class="nav-text">设计目标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E6%A6%82%E7%8E%87"><span class="nav-number">1.1.5.</span> <span class="nav-text">一些基本概率</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">运行环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%A8%E6%88%B7%E6%8E%A5%E5%8F%A3"><span class="nav-number">1.1.5.2.</span> <span class="nav-text">用户接口</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E5%8F%A3"><span class="nav-number">1.1.5.2.1.</span> <span class="nav-text">程序员接口</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E5%91%98%E6%8E%A5%E5%8F%A3"><span class="nav-number">1.1.5.2.2.</span> <span class="nav-text">操作员接口</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="nav-number">1.2.</span> <span class="nav-text">进程管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="nav-number">1.3.</span> <span class="nav-text">线程管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="nav-number">1.4.</span> <span class="nav-text">内存管理</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
