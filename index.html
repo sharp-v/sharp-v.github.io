@@ -168,10 +168,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-06-19 12:19:10 / Modified: 16:30:06" itemprop="dateCreated datePublished" datetime="2021-06-19T12:19:10+08:00">2021-06-19</time>
+              <time title="Created: 2021-06-19 12:19:10" itemprop="dateCreated datePublished" datetime="2021-06-19T12:19:10+08:00">2021-06-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-06-20 17:23:12" itemprop="dateModified" datetime="2021-06-20T17:23:12+08:00">2021-06-20</time>
+              </span>
 
           
 
@@ -192,15 +198,32 @@
 <li>成熟发展阶段 </li>
 </ol>
 <h3 id="操作系统的分类"><a href="#操作系统的分类" class="headerlink" title="操作系统的分类"></a>操作系统的分类</h3><ol>
-<li>按处理器分类<br>a. 分时OS： 采用分配时间片的方法，一个CPU可以为多个用户服务<br> ①所谓分时是指两个以上的事件按时间划分轮流使用某一个资源<br> ②时间片是指分时的时间单位<br> ③所谓分时系统时指多个用户通过联机终端设备时分使用同一台计算机的操作系统</li>
+<li>按处理器分类<br> a. 分时OS： 采用分配时间片的方法，一个CPU可以为多个用户服务<br> ①所谓分时是指两个以上的事件按时间划分轮流使用某一个资源<br> ②时间片是指分时的时间单位<br> ③所谓分时系统时指多个用户通过联机终端设备时分使用同一台计算机的操作系统</li>
 </ol>
 <p>  b. 实时OS： 在较短的时间内及时响应用户要求并完成处理的OS</p>
 <ol start="2">
-<li>按适用面分<br>a. 专用OS：为特定应用目的定制<br>b. 通用OS：通用</li>
-<li>按用户数量分<br>a. 单用户OS<br>b. 多用户OS</li>
-<li>按任务处理方式分<br>a. 交互式OS<br>b. 批处理式OS<br> 批处理(batch)：用户将一批作业提交给操作系统后就不再干预，由操作系统控制它们自动运行，such as window,dos .bat<br> 具体又分为：单道批处理系统、多道批处理系统<br> 特征：用户脱机、作业批量处理<br> 批处理操作系统把作业的吞吐量（单位事件里处理作业的个数）作为主要设计目标，同时兼顾作业的周转时间。<br> 多道批处理系统的优点：资源利用率高；系统吞吐量大<br> 多道批处理系统的缺点：①无交互能力，用户无法以“交互”方式控制作业的运行，对作业的执行过程中出现意外情况无法干预；②平均周转时间长。作业的周转时间通常是几个小时或者几天。</li>
+<li>按适用面分<br> a. 专用OS：为特定应用目的定制<br> b. 通用OS：通用</li>
+<li>按用户数量分<br> a. 单用户OS<br> b. 多用户OS</li>
+<li>按任务处理方式分<br> a. 交互式OS<br> b. 批处理式OS<br>  批处理(batch)：用户将一批作业提交给操作系统后就不再干预，由操作系统控制它们自动运行，such as window,dos .bat<br> 具体又分为：单道批处理系统、多道批处理系统<br> 特征：用户脱机、作业批量处理<br> 批处理操作系统把作业的吞吐量（单位事件里处理作业的个数）作为主要设计目标，同时兼顾作业的周转时间。<br> 多道批处理系统的优点：资源利用率高；系统吞吐量大<br> 多道批处理系统的缺点：<br> ①无交互能力，用户无法以“交互”方式控制作业的运行，对作业的执行过程中出现意外情况无法干预；<br> ②平均周转时间长。作业的周转时间通常是几个小时或者几天。</li>
 <li>按硬件环境和控制方式分<br>a. 集中式OS<br>b. 分布式OS</li>
 </ol>
+<h3 id="现代操作系统的基本特征"><a href="#现代操作系统的基本特征" class="headerlink" title="现代操作系统的基本特征"></a>现代操作系统的基本特征</h3><ol>
+<li>并发性</li>
+<li>共享性</li>
+<li>虚拟性</li>
+<li>不确定性</li>
+</ol>
+<h3 id="操作系统的基本功能性能评价和设计目标"><a href="#操作系统的基本功能性能评价和设计目标" class="headerlink" title="操作系统的基本功能性能评价和设计目标"></a>操作系统的基本功能性能评价和设计目标</h3><h4 id="基本功能"><a href="#基本功能" class="headerlink" title="基本功能"></a>基本功能</h4><p>文件管理<br>进程管理<br>存储器管理<br>设备管理<br>作业管理</p>
+<h4 id="性能评价"><a href="#性能评价" class="headerlink" title="性能评价"></a>性能评价</h4><ol>
+<li><p>系统效率<br> 系统吞吐量<br> 资源利用率<br> 周转时间<br> 响应时间</p>
+</li>
+<li><p>系统的可靠性、可维护性、可用性<br>可靠性R reliability<br>可维护性S serviceability<br>可用性A availability<br>R=MTBF<br>S=MTTR<br>A=MTBF/(MTBF+MTTR)</p>
+</li>
+<li><p>其他方面<br>方便性<br>可移植性<br>安全性</p>
+</li>
+</ol>
+<h4 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h4><p>方便用户使用<br>提供系统资源利用率<br>提高系统效率<br>扩大机器功能<br>构筑开放环境</p>
+<h3 id="基本概率"><a href="#基本概率" class="headerlink" title="基本概率"></a>基本概率</h3><p>内核：宏内核、微内核<br>内核模式 特权指令+非特权指令<br>用户模式 非特权指令<br>访管指令：从用户模式切换到内核模式，内核模式完成后，从内核模式切换的到用户模式<br>作业：把用户要求计算机完成的一个计算过程或者一次事务的处理过程称为一个作业。<br>  作业是用户向计算机系统提交工作的基本单位。<br>  作业的几个步骤：<br>    编辑、编译、链接、运行<br>作业的分类：<br>    按作业的处理方式的不同分：<br>        脱机工作：指用户不能直接与计算机系统交互，中间通过操作员干预的作业。<br>        联机工作：指用户和计算机系统直接交互，用户通过终端或者控制台命令或者菜单图标等方式控制作业的运行。</p>
 <h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><h2 id="线程管理"><a href="#线程管理" class="headerlink" title="线程管理"></a>线程管理</h2><h2 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h2>
       
     </div>
@@ -234,7 +257,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/18/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2021/06/18/hello-world/" class="post-title-link" itemprop="url">Untitled</a>
         </h2>
 
         <div class="post-meta">
@@ -246,6 +269,13 @@
 
               <time title="Created: 2021-06-18 21:44:18" itemprop="dateCreated datePublished" datetime="2021-06-18T21:44:18+08:00">2021-06-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-06-20 17:21:55" itemprop="dateModified" datetime="2021-06-20T17:21:55+08:00">2021-06-20</time>
+              </span>
 
           
 
@@ -258,19 +288,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+          <hr>
+<h2 id="整理"><a href="#整理" class="headerlink" title="整理"></a>整理</h2><p>存放并整理一些知识点。<br>感谢所有平台支持。</p>
 
       
     </div>
