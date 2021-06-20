@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="操作系统知识点总结操作系统基本概念OS: operating system 操作系统发展历史 人工操作阶段 真空管、插线板 批处理阶段  晶体管、批处理系统、穿孔卡片 形成阶段  集成电路、多道程序设计 成熟发展阶段   操作系统的分类 按处理器分类 a. 分时OS： 采用分配时间片的方法，一个CPU可以为多个用户服务 ①所谓分时是指两个以上的事件按时间划分轮流使用某一个资源 ②时间片是指分时的时">
+  <meta name="description" content="操作系统知识点总结操作系统基本概念OS: operating system 操作系统发展历史 人工操作阶段 真空管、插线板 批处理阶段  晶体管、批处理系统、穿孔卡片 形成阶段  集成电路、多道程序设计 成熟发展阶段   操作系统的分类 按处理器分类 a. 分时OS： 采用分配时间片的方法，一个CPU可以为多个用户服务   ①所谓分时是指两个以上的事件按时间划分轮流使用某一个资源   ②时间片是指">
 <meta property="og:type" content="article">
 <meta property="og:title" content="操作系统">
 <meta property="og:url" content="http://example.com/2021/06/19/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="操作系统知识点总结操作系统基本概念OS: operating system 操作系统发展历史 人工操作阶段 真空管、插线板 批处理阶段  晶体管、批处理系统、穿孔卡片 形成阶段  集成电路、多道程序设计 成熟发展阶段   操作系统的分类 按处理器分类 a. 分时OS： 采用分配时间片的方法，一个CPU可以为多个用户服务 ①所谓分时是指两个以上的事件按时间划分轮流使用某一个资源 ②时间片是指分时的时">
+<meta property="og:description" content="操作系统知识点总结操作系统基本概念OS: operating system 操作系统发展历史 人工操作阶段 真空管、插线板 批处理阶段  晶体管、批处理系统、穿孔卡片 形成阶段  集成电路、多道程序设计 成熟发展阶段   操作系统的分类 按处理器分类 a. 分时OS： 采用分配时间片的方法，一个CPU可以为多个用户服务   ①所谓分时是指两个以上的事件按时间划分轮流使用某一个资源   ②时间片是指">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-06-19T04:19:10.005Z">
-<meta property="article:modified_time" content="2021-06-20T09:30:37.572Z">
+<meta property="article:modified_time" content="2021-06-20T13:09:43.696Z">
 <meta property="article:author" content="sharp-v">
 <meta name="twitter:card" content="summary">
 
@@ -180,7 +180,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-06-20 17:30:37" itemprop="dateModified" datetime="2021-06-20T17:30:37+08:00">2021-06-20</time>
+                <time title="Modified: 2021-06-20 21:09:43" itemprop="dateModified" datetime="2021-06-20T21:09:43+08:00">2021-06-20</time>
               </span>
 
           
@@ -202,14 +202,20 @@
 <li>成熟发展阶段 </li>
 </ol>
 <h3 id="操作系统的分类"><a href="#操作系统的分类" class="headerlink" title="操作系统的分类"></a>操作系统的分类</h3><ol>
-<li>按处理器分类<br> a. 分时OS： 采用分配时间片的方法，一个CPU可以为多个用户服务<br> ①所谓分时是指两个以上的事件按时间划分轮流使用某一个资源<br> ②时间片是指分时的时间单位<br> ③所谓分时系统时指多个用户通过联机终端设备时分使用同一台计算机的操作系统</li>
-</ol>
-<p>  b. 实时OS： 在较短的时间内及时响应用户要求并完成处理的OS</p>
-<ol start="2">
-<li>按适用面分<br> a. 专用OS：为特定应用目的定制<br> b. 通用OS：通用</li>
-<li>按用户数量分<br> a. 单用户OS<br> b. 多用户OS</li>
-<li>按任务处理方式分<br> a. 交互式OS<br> b. 批处理式OS<br>  批处理(batch)：用户将一批作业提交给操作系统后就不再干预，由操作系统控制它们自动运行，such as window,dos .bat<br> 具体又分为：单道批处理系统、多道批处理系统<br> 特征：用户脱机、作业批量处理<br> 批处理操作系统把作业的吞吐量（单位事件里处理作业的个数）作为主要设计目标，同时兼顾作业的周转时间。<br> 多道批处理系统的优点：资源利用率高；系统吞吐量大<br> 多道批处理系统的缺点：<br> ①无交互能力，用户无法以“交互”方式控制作业的运行，对作业的执行过程中出现意外情况无法干预；<br> ②平均周转时间长。作业的周转时间通常是几个小时或者几天。</li>
-<li>按硬件环境和控制方式分<br>a. 集中式OS<br>b. 分布式OS</li>
+<li><p>按处理器分类<br> a. 分时OS： 采用分配时间片的方法，一个CPU可以为多个用户服务<br>   ①所谓分时是指两个以上的事件按时间划分轮流使用某一个资源<br>   ②时间片是指分时的时间单位<br>   ③所谓分时系统时指多个用户通过联机终端设备时分使用同一台计算机的操作系统<br> b. 实时OS： 在较短的时间内及时响应用户要求并完成处理的OS</p>
+</li>
+<li><p>按适用面分<br> a. 专用OS：为特定应用目的定制<br> b. 通用OS：通用</p>
+</li>
+<li><p>按用户数量分<br> a. 单用户OS<br> b. 多用户OS</p>
+</li>
+<li><p>按任务处理方式分<br> a. 交互式OS<br> b. 批处理式OS</p>
+<p>  批处理(batch):<br>  用户将一批作业提交给操作系统后就不再干预，由操作系统控制它们自动运行，such as window,dos .bat<br> 具体又分为：单道批处理系统、多道批处理系统</p>
+<p> 特征：用户脱机、作业批量处理<br> 批处理操作系统把作业的吞吐量（单位事件里处理作业的个数）作为主要设计目标，同时兼顾作业的周转时间。</p>
+<p> 多道批处理系统的优点： 资源利用率高；系统吞吐量大</p>
+<p> 多道批处理系统的缺点：<br> ①无交互能力，用户无法以“交互”方式控制作业的运行，对作业的执行过程中出现意外情况无法干预；<br> ②平均周转时间长。作业的周转时间通常是几个小时或者几天。</p>
+</li>
+<li><p>按硬件环境和控制方式分<br>a. 集中式OS<br>b. 分布式OS</p>
+</li>
 </ol>
 <h3 id="现代操作系统的基本特征"><a href="#现代操作系统的基本特征" class="headerlink" title="现代操作系统的基本特征"></a>现代操作系统的基本特征</h3><ol>
 <li>并发性</li>
@@ -221,13 +227,16 @@
 <h4 id="性能评价"><a href="#性能评价" class="headerlink" title="性能评价"></a>性能评价</h4><ol>
 <li><p>系统效率<br> 系统吞吐量<br> 资源利用率<br> 周转时间<br> 响应时间</p>
 </li>
-<li><p>系统的可靠性、可维护性、可用性<br>可靠性R reliability<br>可维护性S serviceability<br>可用性A availability<br>R=MTBF<br>S=MTTR<br>A=MTBF/(MTBF+MTTR)</p>
+<li><p>系统的可靠性、可维护性、可用性<br>可靠性R reliability<br>可维护性S serviceability<br>可用性A availability</p>
+<p>R=MTBF<br>S=MTTR<br>A=MTBF/(MTBF+MTTR)</p>
 </li>
 <li><p>其他方面<br>方便性<br>可移植性<br>安全性</p>
 </li>
 </ol>
 <h4 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h4><p>方便用户使用<br>提供系统资源利用率<br>提高系统效率<br>扩大机器功能<br>构筑开放环境</p>
-<h3 id="基本概率"><a href="#基本概率" class="headerlink" title="基本概率"></a>基本概率</h3><p>内核：宏内核、微内核<br>内核模式 特权指令+非特权指令<br>用户模式 非特权指令<br>访管指令：从用户模式切换到内核模式，内核模式完成后，从内核模式切换的到用户模式<br>作业：把用户要求计算机完成的一个计算过程或者一次事务的处理过程称为一个作业。<br>  作业是用户向计算机系统提交工作的基本单位。<br>  作业的几个步骤：<br>    编辑、编译、链接、运行<br>作业的分类：<br>    按作业的处理方式的不同分：<br>        脱机工作：指用户不能直接与计算机系统交互，中间通过操作员干预的作业。<br>        联机工作：指用户和计算机系统直接交互，用户通过终端或者控制台命令或者菜单图标等方式控制作业的运行。</p>
+<h3 id="一些基本概率"><a href="#一些基本概率" class="headerlink" title="一些基本概率"></a>一些基本概率</h3><p>内核：宏内核、微内核<br>内核模式 特权指令+非特权指令<br>用户模式 非特权指令<br>访管指令：从用户模式切换到内核模式，内核模式完成后，从内核模式切换的到用户模式</p>
+<p>作业:<br>把用户要求计算机完成的一个计算过程或者一次事务的处理过程称为一个作业。<br>作业是用户向计算机系统提交工作的基本单位。<br>作业的几个步骤：<br>编辑、编译、链接、运行</p>
+<p>按作业的处理方式的不同分：<br>脱机工作：指用户不能直接与计算机系统交互，中间通过操作员干预的作业。<br>联机工作：指用户和计算机系统直接交互，用户通过终端或者控制台命令或者菜单图标等方式控制作业的运行。</p>
 <h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><h2 id="线程管理"><a href="#线程管理" class="headerlink" title="线程管理"></a>线程管理</h2><h2 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h2>
     </div>
 
@@ -308,7 +317,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93"><span class="nav-number">1.</span> <span class="nav-text">操作系统知识点总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">操作系统基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2"><span class="nav-number">1.1.1.</span> <span class="nav-text">操作系统发展历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-number">1.1.2.</span> <span class="nav-text">操作系统的分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%89%B9%E5%BE%81"><span class="nav-number">1.1.3.</span> <span class="nav-text">现代操作系统的基本特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD%E6%80%A7%E8%83%BD%E8%AF%84%E4%BB%B7%E5%92%8C%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.4.</span> <span class="nav-text">操作系统的基本功能性能评价和设计目标</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">基本功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%A7%E8%83%BD%E8%AF%84%E4%BB%B7"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">性能评价</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.4.3.</span> <span class="nav-text">设计目标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E7%8E%87"><span class="nav-number">1.1.5.</span> <span class="nav-text">基本概率</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="nav-number">1.2.</span> <span class="nav-text">进程管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="nav-number">1.3.</span> <span class="nav-text">线程管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="nav-number">1.4.</span> <span class="nav-text">内存管理</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93"><span class="nav-number">1.</span> <span class="nav-text">操作系统知识点总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">操作系统基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2"><span class="nav-number">1.1.1.</span> <span class="nav-text">操作系统发展历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-number">1.1.2.</span> <span class="nav-text">操作系统的分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%89%B9%E5%BE%81"><span class="nav-number">1.1.3.</span> <span class="nav-text">现代操作系统的基本特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD%E6%80%A7%E8%83%BD%E8%AF%84%E4%BB%B7%E5%92%8C%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.4.</span> <span class="nav-text">操作系统的基本功能性能评价和设计目标</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">基本功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%A7%E8%83%BD%E8%AF%84%E4%BB%B7"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">性能评价</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87"><span class="nav-number">1.1.4.3.</span> <span class="nav-text">设计目标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E6%A6%82%E7%8E%87"><span class="nav-number">1.1.5.</span> <span class="nav-text">一些基本概率</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="nav-number">1.2.</span> <span class="nav-text">进程管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="nav-number">1.3.</span> <span class="nav-text">线程管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="nav-number">1.4.</span> <span class="nav-text">内存管理</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
