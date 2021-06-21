@@ -28,7 +28,7 @@
 <meta property="og:description" content="(信息来源：操作系统课程ppt和网络，个人修改+个人总结或原句)[toc] 操作系统知识点总结操作系统基本概念OS: operating system 操作系统发展历史 人工操作阶段真空管、插线板 批处理阶段晶体管、批处理系统、穿孔卡片 形成阶段集成电路、多道程序设计 成熟发展阶段   操作系统的分类 按处理器分类a. 分时OS： 采用分配时间片的方法，一个CPU可以为多个用户服务①所谓分时是指两">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-06-19T04:19:10.005Z">
-<meta property="article:modified_time" content="2021-06-20T16:10:09.655Z">
+<meta property="article:modified_time" content="2021-06-21T00:59:02.060Z">
 <meta property="article:author" content="sharp-v">
 <meta name="twitter:card" content="summary">
 
@@ -180,7 +180,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-06-21 00:10:09" itemprop="dateModified" datetime="2021-06-21T00:10:09+08:00">2021-06-21</time>
+                <time title="Modified: 2021-06-21 08:59:02" itemprop="dateModified" datetime="2021-06-21T08:59:02+08:00">2021-06-21</time>
               </span>
 
           
@@ -247,7 +247,12 @@
 <h5 id="操作员接口"><a href="#操作员接口" class="headerlink" title="操作员接口"></a>操作员接口</h5><p>程序员接口由一组系统调用（System Call）组成。程序员接口是操作系统专门为用户程序设置的，允许用户程序调用操作系统的服务和功能，也是用户程序获得操作系统服务的唯一途径。</p>
 <p>系统调用（系统功能调用）<br>用户在程序中能用访管指令区调用的由操作系统提供的子程序，其中每个子程序完成了一个特定的功能。</p>
 <p>系统调用和标准库函数的区别：<br>标准库函数更用户自己编写的函数时一个层次上的东西<br>都是建立在API函数的基础之上<br>API函数中含有访管指令，会跳到内核中对应的内核函数入口去执行<br>windows、linux系统的API是C语言形式的，dos系统的API是汇编形式的，所以省去了API函数这一层，而是在用程序中直接调用访管指令INT</p>
-<p>系统调用传递参数的方法<br>(1)由访管指令或陷入指令自带参数。有直接参数和间接参数两种。例如UNIX系统。(参数还是在内存中的)<br>(2)通过CPU的通用寄存器传递参数，或在内存的一个块或表中存放参数，其首地址送入寄存器，实现参数传递。例如DOS系统。<br>(3）在内存中开辟专用堆栈区域传递参数。</p>
+<p>系统调用传递参数的方法</p>
+<ol>
+<li>由访管指令或陷入指令自带参数。有直接参数和间接参数两种。例如UNIX系统。(参数还是在内存中的)</li>
+<li>通过CPU的通用寄存器传递参数，或在内存的一个块或表中存放参数，其首地址送入寄存器，实现参数传递。例如DOS系统。</li>
+<li>在内存中开辟专用堆栈区域传递参数。</li>
+</ol>
 <p>系统调用与一般过程调用的区别</p>
 <ol>
 <li>运行的系统状态不同<br>一般过程都是全是用户态或者全是内核态<br>系统调用式通过访管指令或者终端从用户态进入内核态，完成调用后，回到用户态</li>
